@@ -1,6 +1,6 @@
-var keyword = "video games"
-var beginYear = 2012;
-var endYear = 2019;
+var keyword = document.getElementById("searchTerm").value;
+var beginYear = $("#startYear");
+var endYear = $("#endYear");
 
 $.ajax ({
     url: "https://api.nytimes.com/svc/search/v2/articlesearch.json?q="+ keyword +"&begin_date="+beginYear+"0101&end_date="+endYear+"1231&api-key=xFGUMelvep9JSPsApWPqND2VCGGyL5pt",
