@@ -50,3 +50,8 @@ function clickClearHandler(){
 
 var element = document.getElementById('clearSearch'); // grab a reference to your element
 element.addEventListener('click', clickClearHandler); // associate
+
+function fn1(){
+    var str = document.getElementById("searchTerm").value;
+    alert(str);
+}
